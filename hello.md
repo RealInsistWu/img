@@ -1,3 +1,0 @@
-# HELLO
-ww
-kkk
