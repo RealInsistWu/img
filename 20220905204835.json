@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {"id": "node1","label": "P", "x": 300, "y": 50},
+    {"id": "node2","label": "C", "x": 600,"y": 50},
+    {"id": "node3","label": "C*", "x": 600,"y": 250},
+    {"id": "node4","label": "P*", "x": 300,"y": 250}
+  ],
+  "edges": [
+    {"source": "node1","label": "格同构","target": "node2"},
+    {"source": "node2","label": "格异构","target": "node3"},
+    {"source": "node3","label": "格同构","target": "node4"},
+    {"source": "node4","label": "格异构","target": "node1"}
+  ]
+}
