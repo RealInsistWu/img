@@ -1,0 +1,421 @@
+/* @theme wave */
+/*wave主题*/
+/* 分别定义英文字体的中文字体 */
+body {
+  font-family: 'Times New Roman', monospace; 
+}
+/*幻灯片*/
+section {
+  background-color: white;
+  display: block;
+  padding: 0;
+  text-align: center;
+  font-size: 35px;
+}
+/*公式*/
+.katex {
+  font-size: 35px;
+  text-align: center;
+}
+.MathJax {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 30px;
+  margin:0 3px 0 3px;
+}
+div {
+  font-family: 'Times New Roman', monospace; 
+}
+/*封面标题*/
+h1 {
+  font-size: 80px;
+  text-align: center;
+  margin: 0 0 0 0;
+  color: #7a988e;
+  font-family: 'Times New Roman', monospace; 
+}
+/*各级标题*/
+h2 {
+  width: fit-content;
+  font-size: 45px;
+  text-align: left;
+  color: #1f7872;
+  margin-top: -10px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  padding: 0px;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #1f7872;
+  text-align: left;
+  margin-left: 80px;
+  padding: 0;
+  line-height: 30px;
+}
+p,ul,li {
+  color:black;
+  letter-spacing: 1.5px;
+  font-size: 35px;
+  line-height: 50px;
+}
+/*段落*/
+section > p {
+  text-align: left;
+  color: black;
+  margin: 0px 80px;
+  display: block;
+}
+/* 有序列表*/
+ol {
+  margin: 0px 80px;
+  text-align: left;
+  list-style: none;
+  counter-reset: li;
+}
+ol li::before {
+  content: counter(li) '.';
+  color: #7a57d1;
+  display: inline-block;
+  margin-left: -1em;
+  margin-right: 0.5em;
+}
+ol li {
+  counter-increment: li;
+  letter-spacing: 1px;
+  line-height: 50px;
+  margin-bottom:10px;
+}
+/*无序列表*/
+ul {
+  margin: 0px 80px;
+  text-align: left;
+  list-style: none;
+}
+ul li::before {
+  content: '\25AA';
+  color: #7a57d1;
+  display: inline-block;
+  margin-left: -1em;
+  margin-right: 0.5em;
+}
+ul li {
+  letter-spacing: 1px;
+  line-height: 47px;
+  margin-bottom:10px;
+}
+/* 加粗 */
+strong{
+  color:#1f7872;
+}
+/*图片*/
+img {
+  text-align: center;
+  border: none;
+  border-style:None;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+/*链接*/
+a {
+  color: inherit;
+}
+/*表格*/
+td {
+  border: 1px solid #92a5a6 !important;
+  padding: 10px 20px;
+  background-color: white !important;
+}
+th {
+  border: 1px solid #92a5a6 !important;
+  padding: 7px 20px;
+  font-weight: normal !important;
+}
+thead tr {
+  background-color: #ede8d2 !important;
+}
+table {
+  border-collapse: collapse;
+  text-align: left;
+  display: inline;
+}
+/*封面*/
+div.purdah {
+  background: url(https://cdn.jsdelivr.net/gh/RealInsistWu/img/20220322093016.png
+) #ede8d2;
+  background-size: 600px 600px;
+  height: 80%;
+  text-align: right;
+  width: 100%;
+  position: absolute;
+  color: #92acb7;
+  font-family: Lora, serif;
+}
+/*页眉菜单*/
+ul.nav {
+  margin: 0 0 20px 0;
+  padding: 0 0;
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+div.menu {
+  height: inherit;
+  width: auto;
+  background-color: #92a5a6;
+  text-align: center;
+  line-height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  color: white;
+}
+/*页眉色块*/
+div.choker {
+  background: url(https://cdn.jsdelivr.net/gh/RealInsistWu/img/20220322093004.png
+) #ede8d2 center center;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+}
+/*指示性文字*/
+div.tip {
+  position: absolute;
+  text-align: center;
+  width: fit-content;
+  padding: 5px 20px 5px 20px;
+  border-style: None;
+  border-width: 1px;
+  letter-spacing: 1.5px;
+}
+/*证毕符号*/
+div.end-proof {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 100px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+/*向上气泡框*/
+.foam-up{
+  position:absolute;
+  padding:50px 40px;
+  margin:1em 0em 3em;
+  width:300px;
+  line-height:1.2;
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(#8AE1FC,#48B8D0);
+  border-radius:220px/120px;
+}
+.foam-up:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: #8AE1FC;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.foam-up:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+  background: #8AE1FC;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+/*向下气泡框*/
+.foam-down{
+  position:absolute;
+  padding:50px 40px;
+  margin:1em 0em 3em;
+  width:300px;
+  line-height:1.2;
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(#8AE1FC,#48B8D0);
+  border-radius:220px/120px;
+}
+.foam-down:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: #8AE1FC;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.foam-down:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+  background: #8AE1FC;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+/*向左尖角框*/
+.tran-left {
+  position: absolute;
+  padding: 15px;
+  margin: 1em 0 3em;
+  border: 5px solid #5a8f00;
+  color: #333;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.tran-left:before {
+  content:"";
+  position:absolute;
+  top: 22px;
+  bottom: auto;
+  left: -30px;
+  width:0;
+  border-style:solid;
+  border-width: 15px 30px 15px 0;
+  border-color: transparent #5a8f00;
+}
+.tran-left:after {
+  content:"";
+  position:absolute;
+  top: 28px;
+  bottom: auto;
+  left: -20px;
+  border-style:solid;
+  border-width: 9px 21px 9px 0;
+  border-color: transparent #fff;
+}
+/*向下箭头*/
+.arrow {
+  position: absolute;
+  width: 0px;
+  height: 60px;
+  border-right: 20px solid #5bc0de;
+}
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  right: -33px;
+  border-top: 25px solid #5bc0de;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+}
+.box {
+  position:absolute;
+  border-style:solid;border-color:#7a57d1;
+}
+/*THANKS*/
+#demo-thanks {
+  display: flex;
+  padding: 12px 24px;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  background: url(https://cdn.jsdelivr.net/gh/RealInsistWu/img/20220322093016.png) #ede8d2;
+  background-size: 600px 600px;
+}
+#thanks {
+  font-size: 75px;
+  color: #5e8b94;
+  font-family: Lora, serif;
+}
+
+/*说明性文字*/
+.desc {
+  font-size: 25px;
+  line-height: 50px;
+  color: #898f99;
+  display: block;
+  margin: 0 0;
+}
+/*图片容器*/
+div.demo-img {
+  flex: 0 1 auto;
+  margin: 0;
+}
+/*说明性文字*/
+.caption {
+  font-size: 25px;
+  line-height: 35px;
+  color: #898f99;
+  display: block;
+  margin: 0 0;
+}
+/*图片在文字右*/
+div.floatright {
+  text-align: center;
+  position: relative;
+  display: block;
+  float: right;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  shape-outside: margin-box;
+}
+/*图片在文字中*/
+div.floatcenter {
+  text-align: center;
+  position: relative;
+  display: block;
+  float: center;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  shape-outside: margin-box;
+}
+/*垂直居中*/
+.display-col {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  padding: 0;
+}
+/*水平居中*/
+.display-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+/*中心居中*/
+.display-center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bespoke-marp-osc{
+  opacity: 1 !important; 
+}
